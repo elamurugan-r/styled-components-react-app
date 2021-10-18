@@ -1,6 +1,6 @@
 ﻿Eslint configuration: 
 
-Open the below .eslintrc.json contents in vscode and see the commented lines for clarification.
+Open the below .eslintrc.json contents (from Line:7 to Line:64) in vscode and see the commented lines for clarification.
 
 File: .eslintrc.json
 

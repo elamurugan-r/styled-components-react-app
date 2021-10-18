@@ -1,13 +1,15 @@
-import React from 'react';
+import { FooterContainer, FooterForm, FooterFormInput, FooterLink, FooterLinkTitle, FooterLinks, FooterLinksContainer, FooterLinksItem, FooterLinksWrapper, FooterSubText, FooterSubTitle, FooterSubscription } from './Footer.elements';
+
 import { Button } from '../../globalStyles';
+import React from 'react';
 import { footerLinks } from './Data';
-import { FooterContainer, FooterForm, FooterFormInput, FooterLink, FooterLinks, FooterLinksContainer, FooterLinksItem, FooterLinksWrapper, FooterLinkTitle, FooterSubscription, FooterSubText, FooterSubTitle } from './Footer.elements';
 
 const map2 = function(callback, thisref) {
   let obj = thisref;
   let len = obj.length;
   let index = 0;
   let result = new Array(len/2);
+  let mappedValueIndex = 0;
   while(index < len) {
     if(index in obj) {
       let val1 = obj[index];
@@ -17,7 +19,8 @@ const map2 = function(callback, thisref) {
       if(index in obj) {
         val2 = obj[index];
       }
-      mappedValue = callback(val1, val2, index);
+      mappedValue = callback(val1, val2, mappedValueIndex);
+      mappedValueIndex += 1;
       result.push(mappedValue);
     }
     index += 1;
