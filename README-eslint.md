@@ -83,3 +83,4 @@ Steps:
    inside the package.json scripts.
 7) Try to run npm run lint and resolve the errors.
 8) Try to run npm start and resolve the errors as commented above in the .eslintrc content.
+9) Also install ESLint by Dirk Baeumer VSCode extension.
