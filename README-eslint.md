@@ -73,7 +73,7 @@ Steps:
 1) install: npm i -D eslint
 2) init: ./node_modules/.bin/eslint --init
 3) Answer all the questions asked during (step 2)
-4) Step 3 will create .eslintrc.json file in the root.
+4) Step 3 will create .eslintrc.json (or) .eslintrc.js file in the root.
 5) Create .env file in the root and add 
     *SKIP_PREFLIGHT_CHECK=true* 
   in the file.
