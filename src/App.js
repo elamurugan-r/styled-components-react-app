@@ -1,12 +1,13 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import { Footer, NavBar } from './components'
+import { Footer, NavBar } from './components';
 import { GlobalStyle } from './globalStyles';
 import { Home } from './pages/Home/Home';
 import { Products } from './pages/Products/Products';
 import { ScrollToTop } from './pages/ScrollToTop';
 import { Services } from './pages/Services/Services';
 import { SignUp } from './pages/SignUp/SignUp';
+import React from 'react';
 
 function App() {
   return (
